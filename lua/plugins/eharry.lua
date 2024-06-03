@@ -1,6 +1,5 @@
 ---@type LazySpec
 return {
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "max397574/better-escape.nvim", enabled = false },
 
   -- disable dap
