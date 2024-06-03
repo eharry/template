@@ -45,6 +45,27 @@ return {
           },
           ["gs"] = false,
           ["S"] = false,
+
+          -- telescope
+          ["<leader>fc"] = false,
+          ["<leader>fc1"] = {
+            function()
+              require("telescope.builtin").grep_string {
+                additional_args = { "-w", "-g", "!*test*" },
+              }
+            end,
+            desc = "find cursor word exluce test",
+          },
+          ["<leader>fc2"] = {
+            function()
+              require("telescope.builtin").grep_string {
+                additional_args = { "-w" },
+              }
+            end,
+            desc = "find cursor word",
+          },
+          ["]q"] = { "<cmd>cnext<cr>", desc = "cnext" },
+          ["[q"] = { "<cmd>cprev<cr>", desc = "cnext" },
         },
       },
     },
