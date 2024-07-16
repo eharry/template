@@ -22,6 +22,7 @@ return {
         opt = { -- vim.opt.<key>
           relativenumber = false, -- sets vim.opt.relativenumber
           wrap = true, -- sets vim.opt.wrap
+          signcolumn = "no", -- sets vim.opt.signcolumn to yes
           mouse = "",
         },
       },
@@ -223,6 +224,21 @@ return {
           enable = true, -- Available strating from nvim-0.8+
         },
         use_trouble_qf = false, -- Quickfix action will open trouble.nvim instead of built-in quickfix list window
+      }
+    end,
+  },
+  {
+    "Mr-LLLLL/interestingwords.nvim",
+    config = function()
+      require("interestingwords").setup {
+        colors = { "#aeee00", "#ff0000", "#b88823", "#ffa724", "#ff2c4b", "#347678", "#169003", "#872097", "#719087" },
+        search_count = true,
+        navigation = true,
+        scroll_center = true,
+        search_key = "<leader>cm",
+        cancel_search_key = "<leader>cM",
+        color_key = "<leader>ck",
+        cancel_color_key = "<leader>cK",
       }
     end,
   },
