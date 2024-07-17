@@ -76,10 +76,10 @@ return {
       features = {
         autoformat = false, -- enable or disable auto formatting on start
       },
-    },
-    formatting = {
-      format_on_save = {
-        enabled = false, -- enable or disable format on save globally
+      formatting = {
+        format_on_save = {
+          enabled = false, -- enable or disable format on save globally
+        },
       },
     },
   },
