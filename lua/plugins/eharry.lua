@@ -64,6 +64,8 @@ return {
             end,
             desc = "find cursor word",
           },
+
+          -- quickfix 
           ["]q"] = { "<cmd>cnext<cr>", desc = "cnext" },
           ["[q"] = { "<cmd>cprev<cr>", desc = "cnext" },
         },
@@ -240,6 +242,12 @@ return {
         color_key = "<leader>ck",
         cancel_color_key = "<leader>cK",
       }
+    end,
+  },
+  {
+    "linrongbin16/gentags.nvim",
+    config = function()
+      require('gentags').setup()
     end,
   },
 }
