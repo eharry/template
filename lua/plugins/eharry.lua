@@ -254,7 +254,7 @@ return {
     "kurotych/ccryptor.nvim",
     config = function()
       require("ccryptor").setup {
-        dir_path = '/Users/cuixin/key/'
+        dir_path = '/Users/eharry/key/'
       }
     end,
   },
