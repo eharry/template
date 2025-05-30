@@ -68,6 +68,11 @@ return {
           -- quickfix 
           ["]q"] = { "<cmd>cnext<cr>", desc = "cnext" },
           ["[q"] = { "<cmd>cprev<cr>", desc = "cnext" },
+
+          --toggleterm
+          ["<leader>tx"] = {"<cmd>exe v:count1 . 'ToggleTerm'<CR>", desc="open term"},
+          ["<leader>tsc"] = {"<cmd>ToggleTermSendCurrentLine<CR>", desc="send current line"},
+          ["<leader>tsv"] = {"<cmd>ToggleTermSendVisualLines<CR>", desc="send current line"},
         },
       },
     },
