@@ -1,20 +1,5 @@
 ---@type LazySpec
 return {
-  { "max397574/better-escape.nvim", enabled = false },
-
-  -- disable dap
-  { "mfussenegger/nvim-dap", enabled = false },
-  { "rcarriga/cmp-dap", enabled = false },
-  { "rcarriga/nvim-dap-ui", enabled = false },
-  { "jay-babu/mason-nvim-dap.nvim", enabled = false },
-
-  { "mrjones2014/smart-splits.nvim", enabled = false },
-
-  -- disable snip
-  { "L3MON4D3/LuaSnip", enabled = false },
-  { "rafamadriz/friendly-snippets", enabled = false },
-  { "saadparwaiz1/cmp_luasnip", enabled = false },
-
   {
     "AstroNvim/astrocore",
     opts = {
@@ -262,5 +247,18 @@ return {
         dir_path = '/Users/eharry/key/'
       }
     end,
+  },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "miikanissi/modus-themes.nvim", priority = 1000 },
+  {
+    "zootedb0t/citruszest.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
 }
