@@ -7,7 +7,7 @@ return {
         opt = { -- vim.opt.<key>
           relativenumber = false, -- sets vim.opt.relativenumber
           wrap = true, -- sets vim.opt.wrap
-          signcolumn = "no", -- sets vim.opt.signcolumn to yes
+          signcolumn = "yes", -- sets vim.opt.signcolumn to yes
           mouse = "",
         },
       },
@@ -234,12 +234,12 @@ return {
       }
     end,
   },
-  {
-    "linrongbin16/gentags.nvim",
-    config = function()
-      require('gentags').setup()
-    end,
-  },
+  -- {
+  --   "linrongbin16/gentags.nvim",
+  --   config = function()
+  --     require('gentags').setup()
+  --   end,
+  -- },
   {
     "kurotych/ccryptor.nvim",
     config = function()
