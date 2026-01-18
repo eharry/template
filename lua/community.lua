@@ -10,5 +10,4 @@ return {
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.motion.leap-nvim" },
-  { import = "astrocommunity.ai.opencode-nvim" },
 }
